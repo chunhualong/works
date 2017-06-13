@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Angular</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/weui.css">
+    <link rel="stylesheet" href="/css/example.css">
+    <script src='/js/main.js'></script>
+    <script src="/js/allcontroll.js"></script>
+    <script src="js/alldirective.js"></script>
+    <script>
+        (function(win) {
+            var doc = win.document;
+            var docEl = doc.documentElement;
+            var tid;
+
+            function refreshRem() {
+                var width = docEl.getBoundingClientRect().width;
+                if (width > 540) { // 最大宽度
+                    width = 540;
+                }
+                var rem = width / 6.4;
+                docEl.style.fontSize = rem + 'px';
+            }
+
+            win.addEventListener('resize', function() {
+                clearTimeout(tid);
+                tid = setTimeout(refreshRem, 300);
+            }, false);
+            win.addEventListener('pageshow', function(e) {
+                if (e.persisted) {
+                    clearTimeout(tid);
+                    tid = setTimeout(refreshRem, 300);
+                }
+            }, false);
+
+            refreshRem();
+
+        })(window);
+    </script>
+</head>
+
+<body ng-app="ngApp">
+    <div class="container">
+        <div class="page tabbar js_show">
+            <div class="page__bd" style="height:100%">
+                <!--<div class="weui-tab">
+                    <header></header>
+                    <ng-view></ng-view>
+                    <tab-bar></tab-bar>
+                </div>-->
+                <main>
+                    <header></header>
+                    <ng-view></ng-view>
+                    <tab-bar></tab-bar>
+                </main>
+            </div>
+
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

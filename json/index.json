@@ -1,0 +1,38 @@
+[
+
+    {
+        "name": "A",
+        "list": [
+            { "name": "A1" },
+            { "name": "A2" }
+        ]
+    },
+    {
+        "name": "B",
+        "list": [
+            { "name": "B1" }
+        ]
+    }, {
+        "name": "C",
+        "list": [
+            { "name": "C" },
+            { "name": "c1" }
+        ]
+    }, {
+        "name": "D",
+        "list": [
+            { "name": "d1" },
+            { "name": "d2" }
+        ]
+    }, {
+        "name": "E",
+        "list": [
+            { "name": "e1" },
+            { "name": "e1" },
+            { "name": "e1" },
+            { "name": "e1" },
+            { "name": "e1" }, { "name": "e1" }
+        ]
+    }
+
+]

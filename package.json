@@ -1,0 +1,27 @@
+{
+  "name": "hello_angulaj",
+  "scripts": {
+    "dev": "gulp dev"
+  },
+  "devDependencies": {
+    "body-parser": "^1.17.2",
+    "browserify": "^14.3.0",
+    "express": "^4.15.3",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-less": "^3.3.0",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-scss": "^1.4.0",
+    "gulp-uglify": "^3.0.0",
+    "pump": "^1.0.2",
+    "sass": "^0.5.0",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "dependencies": {
+    "angular": "^1.6.4",
+    "angular-route": "^1.6.4",
+    "gulp-css-scss": "^0.1.0",
+    "weui": "^1.1.2"
+  }
+}
