@@ -86,5 +86,5 @@ gulp.task('watch', function() {
         gulp.watch('./js/app.js', ['browserify'])
 
     })
-    //默认执行任务
+    //默认执行任务1
 gulp.task('dev', ['sever', 'less', 'example', 'browserify', 'sass', 'scripts', 'watch']);
