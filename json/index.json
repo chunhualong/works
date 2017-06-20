@@ -3,7 +3,7 @@
     {
         "name": "A",
         "list": [
-            { "name": "A1" },
+            { "name": "A1", "area": "大神" },
             { "name": "A2" }
         ]
     },

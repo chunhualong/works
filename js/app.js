@@ -9,7 +9,7 @@ angular.module('ngApp', ['ngRoute', 'myMain', 'myName', 'myHeader', 'mydetails',
             when('/nameshow', {
                 templateUrl: "demo/routeTmp/index.html"
             }).
-            when('/details/:id', {
+            when('/details/:name/:id', {
                 templateUrl: 'demo/routeTmp/details.html'
             }).
             otherwise('/nameshow');

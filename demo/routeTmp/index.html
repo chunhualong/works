@@ -1,7 +1,7 @@
 <div ng-controller="name" class="name-list weui-tab__panel">
     <div class="weui-calls" ng-repeat="name in nameList">
         <div> {{name.name}}</div>
-        <div class="weui-cell weui-cell_access" ng-repeat="list in name.list" ng-click="go('/details/'+list.name)">
+        <div class="weui-cell weui-cell_access" ng-repeat="list in name.list" ng-click="go('/details/'+name.name+'/'+list.name)">
             <div class="weui-cell__hd" style="position: relative;margin-right: 10px;">
                 <img src="images/pic_160.png" style="width: 50px;display: block">
                 <span class="weui-badge" style="position: absolute;top: -.4em;right: -.4em;">8</span>

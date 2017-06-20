@@ -24,8 +24,19 @@ app.get('/', function(req, res) {
 app.get('/nameList', function(req, res) {
     res.json(json)
 })
-app.post('/nameShow', function(rea, res) {
-    console.log(req.body)
+app.post('/nameShow', function(req, res) {
+
+    var name = req.body.name;
+    var id = req.body.id;
+    json.forEach(function(element) {
+        if (name == element.name) {
+            element.list.forEach(function(ele) {
+                if (ele.name == id) {
+                    res.json(ele);
+                }
+            }, this)
+        }
+    }, this);
 
 })
 
