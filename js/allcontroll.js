@@ -8,9 +8,8 @@
                 data: $routeParams
             }).then(function(data) {
                 console.log(data)
+                $scope.nameList = data.data;
             })
-
-            console.log($routeParams)
         }])
 })();
 (function() {
@@ -20,12 +19,16 @@
                 method: 'GET',
                 url: '/nameList'
             }).then(function(data) {
-                console.log(data.data)
                 $scope.nameList = data.data;
             })
             $scope.go = function(name) {
-                console.log(name)
                 $location.url(name)
             }
         }])
+})();
+(function() {
+    angular.module('mySearch', [])
+        .controller('search', ['$scope', function($scope) {
+
+        }]);
 })();
