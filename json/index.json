@@ -3,35 +3,36 @@
     {
         "name": "A",
         "list": [
-            { "name": "A1", "area": "大神" },
-            { "name": "A2" }
+            { "name": "A1", "area": "大神", "image": "images/angular.jpg" },
+            { "name": "A2", "image": "images/angular.jpg" }
         ]
     },
     {
         "name": "B",
+        "image": "images/angular.jpg",
         "list": [
-            { "name": "B1" }
+            { "name": "B1", "image": "images/angular.jpg" }
         ]
     }, {
         "name": "C",
         "list": [
-            { "name": "C" },
-            { "name": "c1" }
+            { "name": "C", "image": "images/angular.jpg" },
+            { "name": "c1", "image": "images/angular.jpg" }
         ]
     }, {
         "name": "D",
         "list": [
-            { "name": "d1" },
-            { "name": "d2" }
+            { "name": "d1", "image": "images/angular.jpg" },
+            { "name": "d2", "image": "images/angular.jpg" }
         ]
     }, {
         "name": "E",
         "list": [
-            { "name": "e1" },
-            { "name": "e1" },
-            { "name": "e1" },
-            { "name": "e1" },
-            { "name": "e1" }, { "name": "e1" }
+            { "name": "e1", "image": "images/angular.jpg" },
+            { "name": "e1", "image": "images/angular.jpg" },
+            { "name": "e1", "image": "images/angular.jpg" },
+            { "name": "e1", "image": "images/angular.jpg" },
+            { "name": "e1", "image": "images/angular.jpg" }, { "name": "e1", "image": "images/angular.jpg" }
         ]
     }
 

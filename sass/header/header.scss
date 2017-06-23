@@ -5,4 +5,11 @@
     height: 0.8rem;
     width: 100%;
     z-index: 99;
+    .header_seach {
+        float: right;
+        font-size: 18px;
+        i {
+            font-size: 22px;
+        }
+    }
 }

@@ -1,15 +1,20 @@
-<div ng-controller="name" class="name-list weui-tab__panel">
-    <div class="weui-calls" ng-repeat="name in nameList">
-        <div> {{name.name}}</div>
-        <div class="weui-cell weui-cell_access" ng-repeat="list in name.list" ng-click="go('/details/'+name.name+'/'+list.name)">
-            <div class="weui-cell__hd" style="position: relative;margin-right: 10px;">
-                <img src="images/pic_160.png" style="width: 50px;display: block">
-                <span class="weui-badge" style="position: absolute;top: -.4em;right: -.4em;">8</span>
-            </div>
-            <div class="weui-cell__bd">
-                <p>{{list.name}}</p>
-                <p style="font-size: 13px;color: #888888;">摘要信息</p>
+<div ng-controller="name" style="position: absolute;width: 100%;height: 100%;">
+    <header></header>
+
+    <div class="name-list weui-tab__panel">
+        <div class="weui-calls" ng-repeat="name in nameList">
+            <div> {{name.name}}</div>
+            <div class="weui-cell weui-cell_access" ng-repeat="list in name.list" ng-click="go('/details/'+name.name+'/'+list.name)">
+                <div class="weui-cell__hd" style="position: relative;margin-right: 10px;">
+                    <img ng-src="{{list.image}}" style="width: 50px;display: block">
+                    <span class="weui-badge" style="position: absolute;top: -.4em;right: -.4em;">8</span>
+                </div>
+                <div class="weui-cell__bd">
+                    <p>{{list.name}}</p>
+                    <p style="font-size: 13px;color: #888888;">摘要信息</p>
+                </div>
             </div>
         </div>
     </div>
+    <tab-bar></tab-bar>
 </div>

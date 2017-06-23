@@ -132,3 +132,8 @@ input {
   height: 0.8rem;
   width: 100%;
   z-index: 99; }
+  .header .header_seach {
+    float: right;
+    font-size: 18px; }
+    .header .header_seach i {
+      font-size: 22px; }

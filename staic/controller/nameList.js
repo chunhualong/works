@@ -5,11 +5,9 @@
                 method: 'GET',
                 url: '/nameList'
             }).then(function(data) {
-                console.log(data.data)
                 $scope.nameList = data.data;
             })
             $scope.go = function(name) {
-                console.log(name)
                 $location.url(name)
             }
         }])

@@ -1,14 +1,17 @@
 (function() {
     angular.module('myTabbar', [])
-        .directive('tabBar', ['$routeParams', function($routeParams) {
+        .directive('tabBar', ['$routeParams', '$location', function($routeParams, $location) {
             return {
                 restrict: "AE",
                 scope: true,
                 replace: true,
                 templateUrl: 'demo/routeTmp/tabbar.html',
+                controller: function($scope, $routeParams, $location) {
+                    console.log($location)
+                },
                 link: function(scope, iElement, iAttrs) {
 
-                    console.log(scope.ifname)
+
                     var ele = iElement.children();
                     for (var a = 0; a < ele.length; a++) {
                         ele[a].onclick = function() {

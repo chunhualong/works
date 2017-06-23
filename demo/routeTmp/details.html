@@ -1,3 +1,14 @@
-<div ng-controller="nameDetails">
-
+<div ng-controller="nameDetails" style="position: absolute;width: 100%;height: 100%;">
+    <header></header>
+    <div class="name-list weui-tab__panel">
+        <div class="weui-cell">
+            <div class="weui-cell__hd" style="position: relative;margin-right: 10px;">
+                <img ng-src="{{nameList.image}}" style=" width: 50px;display: block ">
+            </div>
+            <div class="weui-cell__bd ">
+                <p>{{nameList.name}}</p>
+                <p style="font-size: 13px;color: #888888; ">摘要信息</p>
+            </div>
+        </div>
+    </div>
 </div>

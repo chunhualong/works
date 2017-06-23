@@ -8,8 +8,7 @@
                 data: $routeParams
             }).then(function(data) {
                 console.log(data)
+                $scope.nameList = data.data;
             })
-
-            console.log($routeParams)
         }])
 })();

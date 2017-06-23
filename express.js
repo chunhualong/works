@@ -15,6 +15,7 @@ var json = require('./json/index.json')
 app.use('/js', express.static('js'));
 app.use('/demo', express.static('demo'));
 app.use('/css', express.static('css'));
+app.use('/images', express.static('images'))
 app.use(express.static('json'));
 
 //*路由首页*/

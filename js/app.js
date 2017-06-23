@@ -1,6 +1,6 @@
 var angular = require('angular');
 var ngRoute = require('angular-route');
-angular.module('ngApp', ['ngRoute', 'myMain', 'myName', 'myHeader', 'mydetails', 'myTabbar'])
+angular.module('ngApp', ['ngRoute', 'myMain', 'myName', 'myHeader', 'mydetails', 'myTabbar', 'mySearch'])
     .config(['$locationProvider', '$routeProvider',
         function config($locationProvider, $routeProvider) {
             $locationProvider.hashPrefix('!');
@@ -11,6 +11,9 @@ angular.module('ngApp', ['ngRoute', 'myMain', 'myName', 'myHeader', 'mydetails',
             }).
             when('/details/:name/:id', {
                 templateUrl: 'demo/routeTmp/details.html'
+            }).
+            when('/search', {
+                templateUrl: 'demo/routeTmp/search.html'
             }).
             otherwise('/nameshow');
         }
