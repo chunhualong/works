@@ -1,6 +1,6 @@
 var angular = require('angular');
 var ngRoute = require('angular-route');
-angular.module('ngApp', ['ngRoute', 'myMain', 'myName', 'myHeader', 'mydetails', 'myTabbar', 'mySearch'])
+angular.module('ngApp', ['ngRoute', 'myMain', 'myName', 'myHeader', 'mydetails', 'myTabbar', 'mySearch', 'myInput'])
     .config(['$locationProvider', '$routeProvider',
         function config($locationProvider, $routeProvider) {
             $locationProvider.hashPrefix('!');

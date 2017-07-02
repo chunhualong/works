@@ -1,3 +1,13 @@
 <div ng-controller="search">
     <header></header>
+    <div class="name-list weui-tab__panel">
+        <myinput></myinput>
+        <div class="weui-cells searchbar-result" ng-show="iftext">
+            <a href="" ng-repeat="list in seachName">
+                <div ng-repeat="name in list.list | filter:seachname">{{name.name}}</div>
+            </a>
+
+        </div>
+    </div>
+
 </div>

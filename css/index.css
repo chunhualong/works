@@ -134,6 +134,8 @@ input {
   z-index: 99; }
   .header .header_seach {
     float: right;
-    font-size: 18px; }
+    font-size: 18px;
+    margin-top: 9px;
+    margin-right: 5px; }
     .header .header_seach i {
       font-size: 22px; }
